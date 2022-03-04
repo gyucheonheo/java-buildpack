@@ -1,6 +1,7 @@
 ARG base_image=ubuntu:bionic
 FROM ${base_image}
 
+ARG FIREFOX_VERSION=86.0
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
