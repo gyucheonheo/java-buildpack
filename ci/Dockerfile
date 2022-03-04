@@ -1,4 +1,4 @@
-ARG base_image=ubuntu:xenial
+ARG base_image=ubuntu:bionic
 FROM ${base_image}
 
 ARG FIREFOX_VERSION=86.0
