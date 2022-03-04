@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     firefox
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
-
+RUN echo "[LOG] Hello World"
 RUN locale-gen en_US.UTF-8 \
  && /usr/sbin/update-locale LANG=en_US.UTF-8 \
  && dpkg-reconfigure -f noninteractive locales
